@@ -51,3 +51,28 @@
 
 
 ### 자소서) MVVM 은 무엇인가요?
+MVVM은 WPF나 SilverLight에서 많이 사용되는 프레임워크 패턴 입니다.
+
+역시 Model과 View는 다른 프레임워크 패턴과 같습니다.
+
+하지만 이번에는 Presenter 대신 ViewModel이 존재 합니다.
+
+ViewModel : View를 표현하기 위해 만들어진 View를 위한 Model
+
+MVVM은 두가지 디자인 패턴을 사용합니다. 바로 Command패턴과 Data Binding 인데요.
+
+이 두가지 패턴으로 인해 View와 ViewModel은 의존성이 완전히 사라지게 됩니다.
+
+MVP와 마찬가지로 View에서 입력이 들어오구요. 입력이 들어오면 Command 패턴을 통해
+
+ViewModel에 명령을 내리게 되고 Data Binding으로 인해 ViewModel의 값이 변화하면
+
+바로 View의 정보가 바뀌어져 버리게 됩니다.
+
+정리를 하자면!
+
+View에 입력이 들어오면 Command 패턴으로 ViewModel에 명령을 합니다.
+ViewModel은 필요한 데이터를 Model에 요청 합니다.
+Model은 ViewModel에 필요한 데이터를 응답 합니다.
+ViewModel은 응답 받은 데이터를 가공해서 저장 합니다.
+View는 ViewModel과의 Data Binding으로 인해 자동으로 갱신 됩니다.

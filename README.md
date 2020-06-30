@@ -76,3 +76,5 @@ ViewModel은 필요한 데이터를 Model에 요청 합니다.
 Model은 ViewModel에 필요한 데이터를 응답 합니다.
 ViewModel은 응답 받은 데이터를 가공해서 저장 합니다.
 View는 ViewModel과의 Data Binding으로 인해 자동으로 갱신 됩니다.
+
+.....
